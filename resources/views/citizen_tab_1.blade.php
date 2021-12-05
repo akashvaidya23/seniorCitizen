@@ -14,7 +14,8 @@
                 <form id="validate_form" data-parsley-validate method="POST" action="/citizen/tab1/insert/">
                     @csrf
 
-                    <div class="col-6">
+                    <!-- Akash -->
+                    <div class="col-6"> 
                         <x-jet-label for="Full_name" value="{{ __('संपूर्ण नाव') }}" />
                         @if(isset($c[0]->Full_name) && $c[0]->Full_name!='')
                         <x-jet-input id="Full_name" class="block mt-1 w-full" type="text" name="Full_name" :value="$c[0]->Full_name" required autofocus />
